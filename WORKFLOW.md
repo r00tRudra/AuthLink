@@ -23,7 +23,7 @@ flowchart TD
 
     Main --> AuthRouter[app/auth/router.py\n/auth/register\n/auth/login]
     Main --> UrlRouter[app/urls/router.py\n/urls/*]
-    Main --> RedirectRouter[app/urls/router.py\n/{short_code}]
+    Main --> RedirectRouter["app/urls/router.py\n/{short_code}"]
 
     AuthRouter --> AuthSchemas[app/schemas.py\nUserCreate, UserRead, TokenResponse]
     UrlRouter --> UrlSchemas[app/schemas.py\nURLCreate, URLRead]
