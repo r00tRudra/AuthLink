@@ -25,14 +25,6 @@ their links, and redirect short codes back to the original destination.
 
 ## Project Structure
 
-- [app/main.py](app/main.py) creates the FastAPI app and registers routers.
-- [app/auth](app/auth) contains authentication routes and service logic.
-- [app/urls](app/urls) contains URL creation, listing, deletion, and redirect logic.
-- [app/models.py](app/models.py) defines the `User` and `URL` database models.
-- [app/schemas.py](app/schemas.py) defines request and response schemas.
-- [alembic/](alembic) stores migrations and Alembic configuration.
-- [tests/test_api.py](tests/test_api.py) covers the main end-to-end API flow.
-
 ## Requirements
 
 - Python 3.11 or newer is recommended.
