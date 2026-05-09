@@ -42,7 +42,6 @@ class URL(Base):
         nullable=False,
     )
 
-    
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True),
         server_default=func.now(),
