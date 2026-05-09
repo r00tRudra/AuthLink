@@ -10,7 +10,6 @@ from app.urls.router import redirect_router, router as urls_router
 
 app = FastAPI(title="AuthLink", version="1.0.0")
 
-
 @app.exception_handler(HTTPException)
 async def http_exception_handler(request: Request, exc: HTTPException) -> JSONResponse:
     return JSONResponse(
