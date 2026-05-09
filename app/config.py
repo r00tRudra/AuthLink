@@ -13,6 +13,8 @@ DOTENV_PATH = BASE_DIR / ".env"
 load_dotenv(DOTENV_PATH)
 
 
+
+
 class Settings(BaseModel):
     database_url: str = Field(min_length=1)
     secret_key: str = Field(min_length=1)
