@@ -34,6 +34,9 @@ async def get_current_user(
     except (JWTError, ValueError, TypeError):
         raise credentials_exception
 
+
+    
+
     user = await session.get(User, user_id)
     if user is None:
         raise credentials_exception
